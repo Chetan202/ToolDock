@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080a12" />
+  <title>Privacy Policy — ToolDock</title>
+  <meta name="description" content="How ToolDock handles local browser data, extension permissions, and privacy." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="ToolDock home"><span class="brand-mark" aria-hidden="true">TD</span><span class="brand-name">ToolDock<span class="brand-dot">.</span></span></a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="mailto:chetanjha222@gmail.com">Contact</a>
+        <a class="button button-small button-primary" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:chetanjha222@gmail.com">Contact</a>
+      <a class="button button-primary" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">Add to Chrome <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="prose-page" aria-labelledby="privacy-heading">
+      <header class="prose-header">
+        <div class="prose-eyebrow">ToolDock · Legal</div>
+        <h1 id="privacy-heading">Privacy, plainly.</h1>
+        <p class="prose-meta">Last updated: <time datetime="2026-10-24">October 24, 2026</time></p>
+      </header>
+      <div class="prose">
+        <p class="prose-lead">ToolDock is built around a simple principle: your data is yours. The extension does not require a ToolDock account, and its own saved prompts, settings, and chat index are kept locally in your browser.</p>
+
+        <h2>The short version</h2>
+        <p>ToolDock does not collect or send your ToolDock data to a ToolDock-controlled server. Information used by the extension stays in local browser storage unless you choose an action that opens a supported AI provider or exports a file.</p>
+
+        <h2>What ToolDock stores locally</h2>
+        <p>ToolDock stores the following data in your browser using <code>chrome.storage.local</code>:</p>
+        <ul>
+          <li><strong>Theme preference</strong> — the visual theme selected for a site.</li>
+          <li><strong>Saved prompts</strong> — the prompts you add to your personal prompt library.</li>
+          <li><strong>Chat index</strong> — chat titles from ChatGPT, Claude, Gemini, and Grok used to power cross-site search.</li>
+          <li><strong>Interface preferences</strong> — panel positions, dismissed notices, and other UI state.</li>
+          <li><strong>Wellness reminder settings</strong> — reminder preferences you choose.</li>
+        </ul>
+        <p>This information is stored locally and can be removed when you clear extension data or uninstall ToolDock.</p>
+
+        <h2>What ToolDock does not collect</h2>
+        <ul>
+          <li>Your name, email address, or other identifying details as part of the extension’s normal operation.</li>
+          <li>Analytics about how you use the extension.</li>
+          <li>Payment or financial information.</li>
+          <li>An API key for use by the Claude token counter in persistent extension storage; any key entered for this purpose is intended to remain in memory only.</li>
+        </ul>
+        <p>When you use an AI provider’s website, that provider handles the conversation itself under its own policies. ToolDock does not control those services.</p>
+
+        <h2>Permissions and why they are used</h2>
+        <p>ToolDock requests Chrome extension permissions to power its browser features. Each permission should be used only for its stated purpose.</p>
+        <div class="permission-table">
+          <div class="pt-row pt-head"><span>Permission</span><span>Purpose</span></div>
+          <div class="pt-row"><code>activeTab</code><span>Read the active AI page when you use chat or page tools.</span></div>
+          <div class="pt-row"><code>tabs</code><span>Open destination AI sites in new tabs for Switch AI.</span></div>
+          <div class="pt-row"><code>scripting</code><span>Run locally bundled scripts on supported pages; ToolDock does not execute remote code.</span></div>
+          <div class="pt-row"><code>storage</code><span>Save prompts, preferences, themes, and the local chat index.</span></div>
+          <div class="pt-row"><code>unlimitedStorage</code><span>Keep the chat index without quickly hitting Chrome’s default storage limit.</span></div>
+          <div class="pt-row"><code>downloads</code><span>Save exported conversations and other files to your device when you request an export.</span></div>
+          <div class="pt-row"><code>offscreen</code><span>Support screenshot processing and clean export previews where needed.</span></div>
+          <div class="pt-row"><code>Host permissions</code><span>Allow the extension’s features to work on ChatGPT, Claude, Gemini, and Grok pages.</span></div>
+        </div>
+
+        <h2>Third-party services</h2>
+        <p>ToolDock does not use a ToolDock-hosted analytics or advertising service. When a feature opens an AI site or you choose to share or continue a conversation with another provider, your use of that provider is governed by its own privacy policy.</p>
+
+        <h2>Remote code</h2>
+        <p>ToolDock is intended to run code bundled in the extension package rather than fetch executable code from an external server at runtime.</p>
+
+        <h2>Children’s privacy</h2>
+        <p>ToolDock is not directed at children under 13 and is not designed to collect personal data from children.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes materially, the date at the top of this page will be updated and, where possible, the change will be noted in the Chrome Web Store release notes.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy? Email <a href="mailto:chetanjha222@gmail.com">chetanjha222@gmail.com</a>.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand" href="index.html" aria-label="ToolDock home"><span class="brand-mark" aria-hidden="true">TD</span><span class="brand-name">ToolDock<span class="brand-dot">.</span></span></a>
+      <p class="footer-tagline">Your browser, better equipped.</p>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html#features">Features</a><a href="index.html#how-it-works">How it works</a><a href="privacy.html">Privacy policy</a><a href="mailto:chetanjha222@gmail.com">Contact</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> ToolDock</span><span>Privacy should be easy to understand.</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
